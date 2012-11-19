@@ -12,7 +12,8 @@
 #include <highgui.h>
 #include <iostream>
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv)
+{
 	if (argc < 2)
 	{
 		std::cout << "Please specify an image." << std::endl;
@@ -20,7 +21,8 @@ int main(int argc, char** argv) {
 	}
 	cv::Mat image;
 	image = cv::imread(argv[1], 1);
-	if (!image.data) {
+	if (!image.data)
+	{
 		std::cout << "Image is not loaded." << std::endl;;
 		return -1;
 	}
